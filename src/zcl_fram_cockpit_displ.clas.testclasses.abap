@@ -1,0 +1,30 @@
+*"* use this source file for your ABAP unit test classes
+CLASS lcl_main_view DEFINITION INHERITING FROM zcl_fram_cockpit_displ
+CREATE PRIVATE.
+
+  PUBLIC SECTION.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+
+ENDCLASS.
+
+CLASS lcl_main_view IMPLEMENTATION.
+
+
+ENDCLASS.
+
+CLASS ltcl_basic DEFINITION FINAL FOR TESTING
+  DURATION SHORT
+  RISK LEVEL HARMLESS.
+
+  PRIVATE SECTION.
+    DATA mo_view TYPE REF TO lcl_main_view.
+ENDCLASS.
+
+
+CLASS ltcl_basic IMPLEMENTATION.
+
+
+
+ENDCLASS.
